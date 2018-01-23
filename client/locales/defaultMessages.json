@@ -1,0 +1,12 @@
+[
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "Student Folio",
+        "description": "App title",
+        "id": "app.title"
+      }
+    ],
+    "path": "client/components/App/index.json"
+  }
+]
