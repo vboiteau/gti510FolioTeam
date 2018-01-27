@@ -11,7 +11,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
     entry: ['babel-polyfill', 'react-hot-loader/patch', './client/main.jsx'],
     output: {
-        path: path.resolve('.'),
+        path: path.resolve('./docs'),
         filename: 'bundle.js'
     },
     devtool: 'source-map',
