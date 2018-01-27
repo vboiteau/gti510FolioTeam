@@ -30,7 +30,7 @@ module.exports = {
         "comma-dangle": ["error", "never"],
         "arrow-parens": ["error", "as-needed"],
         "import/prefer-default-export": 0,
-        "import/extensions": [{ "scss": "never", "css": "never"}],
+        "import/extensions": ["error", "always", { "js": "never", "jsx": "never", "json": "never"}],
         "no-unused-vars": ["error", {"varsIgnorePattern": "style"}],
         "no-console": ["warn", {"allow": ["warn", "error", "info"]}],
         "no-underscore-dangle": ["off"],

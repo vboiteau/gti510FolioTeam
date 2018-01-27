@@ -8,5 +8,15 @@
       }
     ],
     "path": "client/components/App/index.json"
+  },
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "Projects List",
+        "description": "Projects List",
+        "id": "projects.title"
+      }
+    ],
+    "path": "client/components/Projects/index.json"
   }
 ]

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { injectIntl } from 'react-intl';
 import Helmet from 'react-helmet';
 
@@ -13,9 +14,10 @@ const HelmetIntl = ({
     />
 );
 
+
 HelmetIntl.propTypes = {
-    intl: React.propTypes.shape({
-        formatMessage: React.propTypes.func.isRequired
+    intl: PropTypes.shape({
+        formatMessage: PropTypes.func.isRequired
     }).isRequired
 };
 
