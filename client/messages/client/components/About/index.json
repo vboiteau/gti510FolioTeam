@@ -1,0 +1,12 @@
+[
+  {
+    "id": "about.title",
+    "description": "About Me page title",
+    "defaultMessage": "About Me"
+  },
+  {
+    "id": "about.description",
+    "description": "About me description text",
+    "defaultMessage": "student description"
+  }
+]

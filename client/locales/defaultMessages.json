@@ -2,6 +2,21 @@
   {
     "descriptors": [
       {
+        "defaultMessage": "About Me",
+        "description": "About Me page title",
+        "id": "about.title"
+      },
+      {
+        "defaultMessage": "student description",
+        "description": "About me description text",
+        "id": "about.description"
+      }
+    ],
+    "path": "client/components/About/index.json"
+  },
+  {
+    "descriptors": [
+      {
         "defaultMessage": "Student Folio",
         "description": "App title",
         "id": "app.title"
