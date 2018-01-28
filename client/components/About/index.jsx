@@ -1,5 +1,6 @@
 import { FormattedMessage } from 'react-intl';
 import React from 'react';
+import { Timeline } from 'react-twitter-widgets';
 
 export default () => (
     <div>
@@ -18,5 +19,16 @@ export default () => (
                 defaultMessage="student description"
             />
         </p>
+        <Timeline
+            dataSource={{
+                sourceType: 'profile',
+                screenName: 'r_etsmtl'
+            }}
+            options={{
+                username: 'r_etsmtl',
+                height: 400,
+                width: 300
+            }}
+        />
     </div>
 );
