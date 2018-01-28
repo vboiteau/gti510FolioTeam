@@ -8,6 +8,7 @@ import fr from 'react-intl/locale-data/fr';
 
 import enMessages from './locales/en';
 import frMessages from './locales/fr';
+import { navigatorParentLanguage } from './utilities';
 
 import App from './components/App/';
 
@@ -20,7 +21,7 @@ const messages = {
 
 ReactDOM.render(
     <AppContainer>
-        <IntlProvider locale={navigator.language} messages={messages[navigator.language.split('-')[0]]}>
+        <IntlProvider locale={navigator.language} messages={messages[navigatorParentLanguage]}>
             <HashRouter>
                 <App />
             </HashRouter>
@@ -35,7 +36,7 @@ if (module.hot) {
         const NextApp = require('./components/App').default;
         render(
             <AppContainer>
-                <IntlProvider locale={navigator.language} messages={messages[navigator.language.split('-')[0]]}>
+                <IntlProvider locale={navigator.language} messages={messages[navigatorParentLanguage]}>
                     <HashRouter>
                         <NextApp />
                     </HashRouter>

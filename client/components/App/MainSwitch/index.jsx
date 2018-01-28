@@ -1,7 +1,8 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router';
 
-import Projects from './../../Projects';
+import ProjectsList from './../../Projects/List';
+import ProjectInfo from './../../Projects/InfoPage';
 import About from './../../About';
 
 export default () => (
@@ -13,7 +14,8 @@ export default () => (
                 <Redirect to="/projects" />
             )}
         />
-        <Route path="/projects" component={Projects} />
+        <Route exact path="/projects" component={ProjectsList} />
+        <Route path="/projects/:slug" component={ProjectInfo} />
         <Route path="/about" component={About} />
     </Switch>
 );
