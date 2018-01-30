@@ -1,0 +1,28 @@
+@import 'commons';
+
+.projects__list {
+  @extend %list;
+
+  &__title {
+    @extend %list__title;
+  }
+  
+  &__item {
+    @extend %card;
+    &__title {
+      @extend %card__title;
+    }
+
+    &__content {
+      @extend %card__body;
+    }
+
+    &__btnMore {
+      @extend %btn;
+    }
+
+    &__footer {
+      @extend %card__footer;
+    }
+  }
+}

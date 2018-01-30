@@ -3,6 +3,7 @@ import React from 'react';
 
 import projectsList from './../data/projectsList';
 import Item from './Item';
+import styles from './styles.scss';
 
 const List = projectsList.map(({ name, shortDesc, slug }) => (
     <Item
@@ -14,15 +15,15 @@ const List = projectsList.map(({ name, shortDesc, slug }) => (
 ));
 
 export default () => (
-    <div>
-        <h1>
+    <div className="projects__list">
+        <h1 className="projects__list__title">
             <FormattedMessage
                 id="projects.title"
                 description="Projects List"
                 defaultMessage="Projects List"
             />
         </h1>
-        <ul>
+        <ul className="projects__list__body">
             {List}
         </ul>
     </div>

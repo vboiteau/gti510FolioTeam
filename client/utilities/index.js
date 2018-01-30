@@ -1,4 +1,4 @@
-const navigatorParentLanguage = navigator.language.split('-')[0];
+const navigatorParentLanguage = navigator.languages[0].split('-')[0];
 
 const slugify = text => text
     .toString()

@@ -8,7 +8,7 @@ import MainSwitch from './MainSwitch';
 import Navigation from './Navigation';
 
 export default () => (
-    <div>
+    <div className="app">
         <HelmetIntl />
         <p className="app__siteTitle">
             <Link to="/" className="app__siteTitle__link" >

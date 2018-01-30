@@ -1,6 +1,7 @@
 {
-  "about.description": "student description",
-  "about.title": "About Me",
+  "about.description": "Description de l'étudiant",
+  "about.title": "À Propos de Moi",
   "app.title": "PortFolio Étudiant",
-  "projects.title": "Projects List"
+  "projects.list.more": "plus",
+  "projects.title": "Liste des projets"
 }

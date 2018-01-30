@@ -2,5 +2,6 @@
   "about.description": "student description",
   "about.title": "About Me",
   "app.title": "Student Folio",
+  "projects.list.more": "more",
   "projects.title": "Projects List"
 }

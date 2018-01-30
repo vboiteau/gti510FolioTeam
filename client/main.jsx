@@ -21,7 +21,7 @@ const messages = {
 
 ReactDOM.render(
     <AppContainer>
-        <IntlProvider locale={navigator.language} messages={messages[navigatorParentLanguage]}>
+        <IntlProvider locale={navigatorParentLanguage} messages={messages[navigatorParentLanguage]}>
             <HashRouter>
                 <App />
             </HashRouter>
@@ -36,7 +36,7 @@ if (module.hot) {
         const NextApp = require('./components/App').default;
         render(
             <AppContainer>
-                <IntlProvider locale={navigator.language} messages={messages[navigatorParentLanguage]}>
+                <IntlProvider locale={navigatorParentLanguage} messages={messages[navigatorParentLanguage]}>
                     <HashRouter>
                         <NextApp />
                     </HashRouter>

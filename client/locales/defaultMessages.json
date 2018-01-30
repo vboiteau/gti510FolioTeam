@@ -33,5 +33,24 @@
       }
     ],
     "path": "client/components/Projects/index.json"
+  },
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "Projects List",
+        "description": "Projects List",
+        "id": "projects.title"
+      }
+    ],
+    "path": "client/components/Projects/List/index.json"
+  },
+  {
+    "descriptors": [
+      {
+        "defaultMessage": "more",
+        "id": "projects.list.more"
+      }
+    ],
+    "path": "client/components/Projects/List/Item.json"
   }
 ]

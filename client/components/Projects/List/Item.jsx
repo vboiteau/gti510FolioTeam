@@ -1,18 +1,28 @@
+import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import styles from './styles.scss';
+
 const Item = ({ name, shortDesc, slug }) => (
-    <li>
-        <h2>
+    <li className="projects__list__item">
+        <h2 className="projects__list__item__title">
             {name}
         </h2>
-        <p>
-            {shortDesc}
-        </p>
-        <Link to={`/projects/${slug}`}>
-            more
-        </Link>
+        <div className="projects__list__item__content">
+            <p>
+                {shortDesc}
+            </p>
+        </div>
+        <div className="projects__list__item__footer">
+            <Link to={`/projects/${slug}`} className="projects__list__item__btnMore">
+                <FormattedMessage
+                    id="projects.list.more"
+                    defaultmessage="more"
+                />
+            </Link>
+        </div>
     </li>
 );
 

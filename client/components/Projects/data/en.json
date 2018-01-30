@@ -3,5 +3,10 @@
     "name": "Project Name 1",
     "shortDesc": "Short description of Project 1",
     "longDesc": "Long description of project 1"
+  },
+  {
+    "name": "Project Name 2",
+    "shortDesc": "Short description of Project 2",
+    "longDesc": "Long description of project 2"
   }
 ]

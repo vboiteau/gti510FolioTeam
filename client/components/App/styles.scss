@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import 'commons';
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -15,20 +17,25 @@ html {
 }
 
 body {
-  font-size: .85em;
   background-color: $main-background;
   color: $title-color;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .85em;
 }
 
 a {
   text-decoration: none
 }
 
-.app__siteTitle {
-  margin: 1em;
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  &__siteTitle {
+    margin: 1em;
 
-  a {
-    color: $title-color;
-    font-size: 2.4em;
+    a {
+      color: $title-color;
+      font-size: 2.4em;
+    }
   }
 }

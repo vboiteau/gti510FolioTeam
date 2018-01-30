@@ -1,0 +1,18 @@
+@import 'commons';
+.about {
+  @extend %card;
+
+  margin-top: 1em;
+
+  &__title {
+    @extend %card__title;
+  }
+
+  &__content {
+    @extend %card__body;
+  }
+
+  &__footer {
+    @extend %card__footer;
+  }
+}

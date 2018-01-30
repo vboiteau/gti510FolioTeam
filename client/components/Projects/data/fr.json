@@ -1,7 +1,12 @@
 [
   {
-    "name": "Project Name 1",
-    "shortDesc": "Short description of Project 1",
-    "longDesc": "Long description of project 1"
+    "name": "Nom du Projet 1",
+    "shortDesc": "Description courte du projet 1",
+    "longDesc": "Description long du projet 1"
+  },
+  {
+    "name": "Nom du Projet 2",
+    "shortDesc": "Description courte du projet 2",
+    "longDesc": "Description long du projet 2"
   }
 ]

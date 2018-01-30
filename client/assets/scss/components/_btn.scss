@@ -1,0 +1,12 @@
+%btn {
+  background-color: lighten($main-background, 10%);
+  color: $title-color;
+  display: inline-block;
+  padding: .5em;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  &:hover {
+    background-color: lighten($main-background, 20%);
+  }
+}
