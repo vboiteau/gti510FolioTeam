@@ -38,4 +38,10 @@ a {
       font-size: 2.4em;
     }
   }
+
+  &__header {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+  }
 }

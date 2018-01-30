@@ -33,7 +33,8 @@ export default () => (
                     options={{
                         username: 'r_etsmtl',
                         height: 400,
-                        width: 300
+                        width: 300,
+                        theme: 'dark'
                     }}
                 />
             </div>
