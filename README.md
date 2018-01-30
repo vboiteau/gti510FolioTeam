@@ -1,4 +1,11 @@
 # GTI510 - FolioTeam
+## Run
+
+```bash
+$ npm install
+$ npm start
+```
+
 ## Structure 
 - client/ working code
 - docs/ code served by github
