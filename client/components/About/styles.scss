@@ -14,5 +14,14 @@
 
   &__footer {
     @extend %card__footer;
+    a {
+      display: inline-block;
+      margin: 0 .25em;
+      color: $main-background;
+
+      &:hover {
+        color: lighten($main-background, 20%);
+      }
+    }
   }
 }

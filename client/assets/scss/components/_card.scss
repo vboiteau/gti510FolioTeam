@@ -18,9 +18,18 @@
 
   &__body {
     display: flex;
+    @media screen and (max-width: 700px) {
+      display: block;
+    }
     justify-content: space-between;
     margin-bottom: 1em;
     padding: .25em;
+
+    .main {
+      @media screen and (max-width: 700px) {
+        padding-bottom : 2em;
+      }
+    }
   }
   
   &__footer {
