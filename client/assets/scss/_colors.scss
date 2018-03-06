@@ -1,2 +1,26 @@
 $main-background: #1a1a1a;
 $title-color: #f2f2f2;
+$detail-color: lighten($main-background, 10%);
+$detail-hover-color: lighten($main-background, 20%);
+$js-color: #eeda68;
+$html-color: #e67f45;
+$sass-color: #c36a98;
+$react-color: #7ed8f7;
+
+.js, .es6 {
+  background-color: $js-color;
+  color: $main-background;
+}
+
+.react {
+  background-color: $react-color;
+  color: $main-background;
+}
+
+.html, .html5 {
+  background-color: $html-color;
+}
+
+.sass {
+  background-color: $sass-color;
+}

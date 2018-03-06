@@ -2,11 +2,33 @@
   {
     "name": "Project Name 1",
     "shortDesc": "Short description of Project 1",
-    "longDesc": "Long description of project 1"
+    "longDesc": "Long description of project 1",
+    "year": 2016,
+    "technos": [
+      "js",
+      "sass",
+      "html5"
+    ],
+    "images": [
+      "default1.png",
+      "default2.png"
+    ]
   },
   {
     "name": "Project Name 2",
     "shortDesc": "Short description of Project 2",
-    "longDesc": "Long description of project 2"
+    "longDesc": "Long description of project 2",
+    "technos": [
+      "es6",
+      "react",
+      "sass",
+      "html5"
+    ],
+    "images": [
+      "default1.png",
+      "default2.png"
+    ],
+    "year": 2018
+
   }
 ]

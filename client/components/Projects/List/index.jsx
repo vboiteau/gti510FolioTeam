@@ -5,12 +5,16 @@ import projectsList from './../data/projectsList';
 import Item from './Item';
 import styles from './styles.scss';
 
-const List = projectsList.map(({ name, shortDesc, slug }) => (
+const List = projectsList.map(({
+    name, shortDesc, slug, year, technos, images
+}) => (
     <Item
         key={slug}
         name={name}
         shortDesc={shortDesc}
         slug={slug}
+        labels={[year, ...technos]}
+        img={images[0]}
     />
 ));
 

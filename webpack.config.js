@@ -16,7 +16,7 @@ module.exports = {
     },
     devtool: 'source-map',
     resolve: {
-        extensions: ['.js', '.jsx', '.json']
+        extensions: ['.js', '.jsx', '.json', '.png', '.jpg', '.svg']
     },
     module: {
         loaders: [
@@ -43,6 +43,11 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(jpg|png|svg)$/,
+                loader: 'file',
+                include: path.resolve('./docs/img')
             }
         ]
     },

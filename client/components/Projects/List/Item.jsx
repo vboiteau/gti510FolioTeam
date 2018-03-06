@@ -4,16 +4,24 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import styles from './styles.scss';
+import LabelList from './../common/LabelList';
+import ProjectImage from './../common/ProjectImage';
 
-const Item = ({ name, shortDesc, slug }) => (
+const Item = ({
+    name, shortDesc, slug, labels, img
+}) => (
     <li className="projects__list__item">
         <h2 className="projects__list__item__title">
             {name}
         </h2>
         <div className="projects__list__item__content">
-            <p>
+            <div className="preview">
+                <ProjectImage filename={img} alt={`${name} preview`} />
+            </div>
+            <p className="short-desc">
                 {shortDesc}
             </p>
+            <LabelList labels={labels} />
         </div>
         <div className="projects__list__item__footer">
             <Link to={`/projects/${slug}`} className="projects__list__item__btnMore">
@@ -29,7 +37,14 @@ const Item = ({ name, shortDesc, slug }) => (
 Item.propTypes = {
     name: PropTypes.string.isRequired,
     shortDesc: PropTypes.string.isRequired,
-    slug: PropTypes.string.isRequired
+    slug: PropTypes.string.isRequired,
+    labels: PropTypes.array,
+    img: PropTypes.string
+};
+
+Item.defaultProps = {
+    labels: [],
+    img: ''
 };
 
 export default Item;

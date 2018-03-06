@@ -10,6 +10,16 @@
 
   &__content {
     @extend %card__body;
+    display: flex;
+    @media screen and (max-width: 700px) {
+      display: block;
+    }
+    justify-content: space-between;
+    .main {
+      @media screen and (max-width: 700px) {
+        padding-bottom : 2em;
+      }
+    }
   }
 
   &__footer {
