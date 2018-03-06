@@ -17,7 +17,7 @@ class ProjectImage extends React.Component {
 
     render() {
         return (
-            <img src={this.state.image} alt={this.props.alt} />
+            <img src={`/img/${this.props.filename}`} alt={this.props.alt} />
         );
     }
 }
