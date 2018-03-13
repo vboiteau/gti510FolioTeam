@@ -8,6 +8,8 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     inject: false
 });
 
+const getPath = p => path.resolve(path.join(__dirname, p));
+
 module.exports = {
     entry: ['babel-polyfill', 'react-hot-loader/patch', './client/main.jsx'],
     output: {
@@ -16,12 +18,25 @@ module.exports = {
     },
     devtool: 'source-map',
     resolve: {
-        extensions: ['.js', '.jsx', '.json', '.png', '.jpg', '.svg']
+        extensions: ['.js', '.jsx', '.json', '.png', '.jpg', '.svg'],
+        alias: {
+            '#Components': getPath('client/components'),
+            '#Assets': getPath('client/assets')
+        }
     },
     module: {
         loaders: [
             {
                 test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/
+            },
+            {
+                test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name].[ext]'
+                    }
+                }]
             },
             {
                 test: /\.s?css$/,
