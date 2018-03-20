@@ -9605,19 +9605,6 @@ var slugify = function slugify(text) {
 
 exports.navigatorParentLanguage = navigatorParentLanguage;
 exports.slugify = slugify;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(navigatorParentLanguage, 'navigatorParentLanguage', '/Users/vboiteau/Projects/School/GTI510/client/utilities/index.js');
-
-    __REACT_HOT_LOADER__.register(slugify, 'slugify', '/Users/vboiteau/Projects/School/GTI510/client/utilities/index.js');
-}();
-
-;
 
 /***/ }),
 /* 195 */
@@ -9763,26 +9750,11 @@ var projectsList = {
     en: _en2.default
 };
 
-var _default = projectsList[_utilities.navigatorParentLanguage].map(function (project) {
+exports.default = projectsList[_utilities.navigatorParentLanguage].map(function (project) {
     return Object.assign(project, {
         slug: (0, _utilities.slugify)(project.name)
     });
 });
-
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(projectsList, 'projectsList', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/data/projectsList.js');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/data/projectsList.js');
-}();
-
-;
 
 /***/ }),
 /* 198 */
@@ -9861,21 +9833,7 @@ LabelList.propTypes = {
     labels: _propTypes2.default.array.isRequired
 };
 
-var _default = LabelList;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(LabelList, 'LabelList', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/common/LabelList/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/common/LabelList/index.jsx');
-}();
-
-;
+exports.default = LabelList;
 
 /***/ }),
 /* 200 */
@@ -9952,21 +9910,7 @@ ProjectImage.defaultProps = {
     classNames: []
 };
 
-var _default = ProjectImage;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(ProjectImage, 'ProjectImage', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/common/ProjectImage.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/common/ProjectImage.jsx');
-}();
-
-;
+exports.default = ProjectImage;
 
 /***/ }),
 /* 201 */
@@ -16491,17 +16435,6 @@ if (false) {
         ), document.getElementById('root'));
     });
 }
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(messages, 'messages', '/Users/vboiteau/Projects/School/GTI510/client/main.jsx');
-}();
-
-;
 
 /***/ }),
 /* 438 */
@@ -39713,7 +39646,7 @@ var _Navigation2 = _interopRequireDefault(_Navigation);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _default = function _default() {
+exports.default = function () {
     return _react2.default.createElement(
         'div',
         { className: 'app' },
@@ -39739,19 +39672,6 @@ var _default = function _default() {
         _react2.default.createElement(_MainSwitch2.default, null)
     );
 };
-
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/App/index.jsx');
-}();
-
-;
 
 /***/ }),
 /* 500 */
@@ -39936,22 +39856,7 @@ HelmetIntl.propTypes = {
     }).isRequired
 };
 
-var _default = (0, _reactIntl.injectIntl)(HelmetIntl);
-
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(HelmetIntl, 'HelmetIntl', '/Users/vboiteau/Projects/School/GTI510/client/components/App/HelmetIntl.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/App/HelmetIntl.jsx');
-}();
-
-;
+exports.default = (0, _reactIntl.injectIntl)(HelmetIntl);
 
 /***/ }),
 /* 504 */
@@ -41145,7 +41050,7 @@ var _About2 = _interopRequireDefault(_About);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _default = function _default() {
+exports.default = function () {
     return _react2.default.createElement(
         _reactRouter.Switch,
         null,
@@ -41161,19 +41066,6 @@ var _default = function _default() {
         _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default })
     );
 };
-
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/App/MainSwitch/index.jsx');
-}();
-
-;
 
 /***/ }),
 /* 512 */
@@ -41349,25 +41241,7 @@ var ProjectList = function (_React$Component) {
     return ProjectList;
 }(_react2.default.Component);
 
-var _default = ProjectList;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(List, 'List', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/List/index.jsx');
-
-    __REACT_HOT_LOADER__.register(filtersEntries, 'filtersEntries', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/List/index.jsx');
-
-    __REACT_HOT_LOADER__.register(ProjectList, 'ProjectList', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/List/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/List/index.jsx');
-}();
-
-;
+exports.default = ProjectList;
 
 /***/ }),
 /* 514 */
@@ -41475,21 +41349,7 @@ Item.defaultProps = {
     img: ''
 };
 
-var _default = Item;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(Item, 'Item', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/List/Item.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/List/Item.jsx');
-}();
-
-;
+exports.default = Item;
 
 /***/ }),
 /* 517 */
@@ -41543,21 +41403,7 @@ Label.propTypes = {
     label: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]).isRequired
 };
 
-var _default = Label;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(Label, 'Label', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/common/Label.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/common/Label.jsx');
-}();
-
-;
+exports.default = Label;
 
 /***/ }),
 /* 519 */
@@ -41728,21 +41574,7 @@ FilterSelect.propTypes = {
     currentFilter: _propTypes2.default.string.isRequired
 };
 
-var _default = FilterSelect;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(FilterSelect, 'FilterSelect', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/List/FilterSelect.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/List/FilterSelect.jsx');
-}();
-
-;
+exports.default = FilterSelect;
 
 /***/ }),
 /* 525 */
@@ -41847,21 +41679,7 @@ InfoPage.propTypes = {
     }).isRequired
 };
 
-var _default = InfoPage;
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(InfoPage, 'InfoPage', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/InfoPage/index.jsx');
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/Projects/InfoPage/index.jsx');
-}();
-
-;
+exports.default = InfoPage;
 
 /***/ }),
 /* 526 */
@@ -41945,7 +41763,7 @@ var _config2 = _interopRequireDefault(_config);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _default = function _default() {
+exports.default = function () {
     return _react2.default.createElement(
         'div',
         { className: 'about' },
@@ -42012,19 +41830,6 @@ var _default = function _default() {
         )
     );
 };
-
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/About/index.jsx');
-}();
-
-;
 
 /***/ }),
 /* 529 */
@@ -45226,23 +45031,11 @@ exports.push([module.i, ".js, .es6 {\n  background-color: #eeda68;\n  color: #1a
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var _default = {
+exports.default = {
     twitter: 'r_etsmtl',
     github: 'vboiteau',
     linkedin: 'vincentboiteaurobert'
 };
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/About/config.js');
-}();
-
-;
 
 /***/ }),
 /* 616 */
@@ -45269,7 +45062,7 @@ var _styles2 = _interopRequireDefault(_styles);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _default = function _default() {
+exports.default = function () {
     return _react2.default.createElement(
         'div',
         { className: 'app__nav' },
@@ -45297,19 +45090,6 @@ var _default = function _default() {
         )
     );
 };
-
-exports.default = _default;
-;
-
-var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
-
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/vboiteau/Projects/School/GTI510/client/components/App/Navigation/index.jsx');
-}();
-
-;
 
 /***/ }),
 /* 617 */

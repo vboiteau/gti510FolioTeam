@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build": "NODE_ENV=production webpack",
     "prebuild": "mkdir -p docs/img && imagemin client/assets/img/* -o=docs/img",
     "lint": "eslint --fix --ext .js --ext .jsx .",
     "start:dev": "webpack-dev-server --hot",
