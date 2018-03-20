@@ -11,6 +11,30 @@
 
   &__content {
     @extend %card__body;
+    display: flex;
+    position: relative;
+    &__main {
+      min-width: 320px;
+      width: 60%;
+    }
+
+    &__sidebar {
+      min-width: 240px;
+      width: 40%;
+    }
+
+    @media screen and (max-width: 560px) {
+      display: block;
+
+      &__main {
+        margin-bottom: 2em;
+      }
+
+      &__sidebar,
+      &__main {
+        width: 100%;
+      }
+    }
   }
 
   &__footer {

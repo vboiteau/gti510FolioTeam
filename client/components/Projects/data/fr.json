@@ -2,7 +2,7 @@
   {
     "name": "Nom du Projet 1",
     "shortDesc": "Description courte du projet 1",
-    "longDesc": "Description long du projet 1",
+    "longDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "year": 2016,
     "technos": [
       "js",
@@ -12,12 +12,13 @@
     "images": [
       "default1.png",
       "default2.png"
-    ]
+    ],
+    "github": "https://github.com/vboiteau/gti510FolioTeam"
   },
   {
     "name": "Nom du Projet 2",
     "shortDesc": "Description courte du projet 2",
-    "longDesc": "Description long du projet 2",
+    "longDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "technos": [
       "es6",
       "react",
@@ -28,6 +29,7 @@
       "default1.png",
       "default2.png"
     ],
-    "year": 2018
+    "year": 2018,
+    "github": "https://github.com/vboiteau/gti510FolioTeam"
   }
 ]
