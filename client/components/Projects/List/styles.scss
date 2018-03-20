@@ -2,9 +2,29 @@
 
 .projects__list {
   @extend %list;
+  position: relative;
 
   &__title {
     @extend %list__title;
+  }
+
+  &__filter-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: $detail-color;
+    border: none;
+    border-radius: 3px;
+    color: inherit;
+    font-size: inherit;
+    outline: none;
+    padding: .25em;
+    padding-right: 2em;
+    position: absolute;
+    right: 0;
+    top: 2em;
+    &:hover {
+      background-color: $detail-hover-color;
+    }
   }
   
   &__item {
