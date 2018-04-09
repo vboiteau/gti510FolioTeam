@@ -41,7 +41,7 @@
       "react",
       "sass",
       "html5",
-      "react"
+      "redux"
     ],
     "images": [
       "default1.png",
